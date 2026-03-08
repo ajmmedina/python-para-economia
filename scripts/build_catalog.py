@@ -27,5 +27,5 @@ for folder in root.iterdir():
 
 Path("data").mkdir(exist_ok=True)
 
-with open("data/catalog.json", "w") as f:
+with open("site/data/catalog.json", "w") as f:
     json.dump({"units": units}, f, indent=2)
