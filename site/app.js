@@ -1,4 +1,4 @@
-fetch('../data/catalog.json')
+fetch('data/catalog.json')
 
 .then(r => r.json())
 
