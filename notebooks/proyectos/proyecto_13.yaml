@@ -1,0 +1,8 @@
+titulo: "Consultas avanzadas en bases de datos con SQL"
+descripcion: "Proyecto para practicar consultas SQL avanzadas en bases de datos económicas usando Python y SQLite."
+sesion: 3
+proposito: "Que el estudiante domine consultas SQL complejas para extraer información relevante de bases de datos económicas."
+tipo: "proyecto"
+unidad: 3
+dificultad: "intermedio"
+librerias: ["sqlite3"]

@@ -1,0 +1,8 @@
+titulo: "Análisis de riesgo financiero con Python"
+descripcion: "Proyecto para evaluar riesgos financieros usando técnicas estadísticas y simulaciones en Python."
+sesion: 4
+proposito: "Que el estudiante aprenda a calcular y analizar riesgos financieros aplicando estadística y simulación."
+tipo: "proyecto"
+unidad: 5
+dificultad: "avanzado"
+librerias: ["numpy", "scipy", "matplotlib"]

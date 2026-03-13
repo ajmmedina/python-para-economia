@@ -1,5 +1,100 @@
-<h1>Python para Economía</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Python para Economistas — Curso inicial de Python orientado a estudiantes de Economía. Aprende programación, análisis de datos y visualización.">
+    <title>Python para Economistas — Curso</title>
+    <link rel="icon" type="image/webp" href="assets/img/logo_cuadrado.webp">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
-<div id="units" class="grid"></div>
+    <!-- Auth Gate (Locked Screen) -->
+    <div class="auth-gate" id="auth-gate" style="display: none;">
+        <div class="auth-gate-content">
+            <img src="assets/img/Logo_normal.webp" alt="Logo" class="auth-gate-logo">
+            <div class="auth-gate-lock">🔒</div>
+            <h2>Acceso Restringido</h2>
+            <p>Para acceder al material del curso de <strong>Python para Economistas</strong> y subir tus proyectos, necesitas iniciar sesión con tu cuenta de Google.</p>
+            <button class="btn-google" id="btn-google-login">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="G">
+                <span>Continuar con Google</span>
+            </button>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/Logo_normal.webp" alt="Python para Economistas" class="logo-img">
+            </a>
+            <div class="header-auth" id="header-auth">
+                <!-- User profile or login button will be injected here -->
+            </div>
+        </div>
+    </header>
 
-<script src="app.js"></script>
+    <!-- Main Content -->
+    <main>
+        <div class="section-header">
+            <h1>📚 Unidades del Curso</h1>
+            <p>El curso está dividido en unidades temáticas. Selecciona una unidad para acceder a sus sesiones de aprendizaje y proyectos prácticos.</p>
+        </div>
+
+        <div id="units-grid" class="card-grid">
+            <!-- Unit cards rendered by JS -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <img src="assets/img/Logo_normal.webp" alt="Logo" class="footer-logo">
+            <div class="footer-gradient-line"></div>
+            <div class="footer-contact">
+                <strong>Alexander Meza</strong>
+                <a href="mailto:alexander.josue@gmail.com">📧 alexander.josue@gmail.com</a>
+                <a href="mailto:ajmmedina.alexander@mique.host">📁 ajmmedina.alexander@mique.host (Drive)</a>
+                <button class="btn-coffee" id="btn-open-coffee" aria-label="Invítame un café" onclick="openCoffeeModal()">
+                    ☕ Invítame un café
+                </button>
+            </div>
+            <p class="footer-copy">
+                © 2026 <a href="index.html">Python para Economistas</a> — Creado con 💛 para futuros economistas.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Coffee Modal -->
+    <div class="modal-overlay" id="coffee-modal" style="display: none;">
+        <div class="modal-box" style="max-width: 400px; text-align: center;">
+            <div class="modal-header">
+                <h2>☕ Invítame un café</h2>
+                <button class="modal-close" id="coffee-close" aria-label="Cerrar" onclick="closeCoffeeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Si este curso te está siendo útil, puedes apoyarme con un cafecito a través de Yape. ¡Cualquier aporte es bienvenido!</p>
+                
+                <div class="coffee-qr-container">
+                    <div class="coffee-qr-placeholder">
+                        <img src="assets/img/mi_qr_yape.webp" alt="QR Yape" style="max-width: 100%;">
+                    </div>
+                </div>
+
+                <div class="coffee-goal">
+                    <strong>Meta:</strong> Comprar un nuevo curso de Econometría para compartirlo aquí.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK (compat v9) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

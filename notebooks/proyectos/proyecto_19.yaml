@@ -1,0 +1,8 @@
+titulo: "Análisis de regresión lineal simple con statsmodels"
+descripcion: "Proyecto para realizar análisis de regresión lineal simple en datos económicos usando statsmodels."
+sesion: 4
+proposito: "Que el estudiante aprenda a aplicar regresión lineal simple para modelar relaciones económicas y evaluar resultados."
+tipo: "proyecto"
+unidad: 4
+dificultad: "intermedio"
+librerias: ["pandas", "statsmodels"]

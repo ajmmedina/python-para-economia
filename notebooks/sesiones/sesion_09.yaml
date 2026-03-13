@@ -1,0 +1,8 @@
+titulo: "Visualización avanzada y análisis de datos económicos"
+descripcion: "Aprender a utilizar librerías avanzadas para visualización y análisis de datos económicos en Python."
+sesion: 9
+proposito: "Que el estudiante aprenda a utilizar librerías avanzadas para visualización y análisis de datos económicos en Python, aplicando técnicas prácticas para interpretar información compleja."
+tipo: "sesión"
+unidad: 2
+dificultad: "avanzado"
+librerias: ["seaborn", "pandas", "numpy", "matplotlib"]

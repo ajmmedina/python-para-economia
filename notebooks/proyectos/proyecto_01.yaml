@@ -1,0 +1,8 @@
+titulo: "Cálculo de indicadores económicos básicos con Python"
+descripcion: "Proyecto para aplicar variables, listas, funciones, condicionales y manejo básico de archivos en un contexto económico realista."
+sesion: 1
+proposito: "Este proyecto tiene como objetivo que el estudiante aplique conceptos fundamentales de Python —variables, listas, funciones, estructuras condicionales y manejo básico de archivos— para calcular y clasificar un indicador económico realista: el crecimiento trimestral del PIB. Así, se refuerzan habilidades de programación básicas en un contexto económico."
+tipo: "proyecto"
+unidad: 1
+dificultad: "básico"
+librerias: []

@@ -1,0 +1,8 @@
+titulo: "Modelado financiero básico con Python"
+descripcion: "Sesión para desarrollar modelos financieros simples para evaluar escenarios y tomar decisiones."
+sesion: 2
+proposito: "Que el estudiante desarrolle modelos financieros simples para evaluar escenarios y tomar decisiones."
+tipo: "sesion"
+unidad: 5
+dificultad: "intermedio"
+librerias: ["numpy"]

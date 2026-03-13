@@ -1,0 +1,8 @@
+titulo: "Análisis estadístico básico con pandas y scipy"
+descripcion: "Proyecto para realizar análisis estadísticos básicos y pruebas de hipótesis en datos económicos."
+sesion: 5
+proposito: "Que el estudiante aprenda a aplicar análisis estadísticos y pruebas de hipótesis usando pandas y scipy en economía."
+tipo: "proyecto"
+unidad: 2
+dificultad: "intermedio"
+librerias: ["pandas", "scipy"]

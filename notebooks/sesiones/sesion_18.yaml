@@ -1,0 +1,8 @@
+titulo: "Visualización interactiva de datos económicos"
+descripcion: "Sesión para aprender a crear dashboards interactivos para explorar datos económicos."
+sesion: 3
+proposito: "Que el estudiante aprenda a crear dashboards interactivos para explorar datos económicos."
+tipo: "sesion"
+unidad: 5
+dificultad: "avanzado"
+librerias: ["plotly", "dash"]

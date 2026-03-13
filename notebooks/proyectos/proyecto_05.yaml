@@ -1,0 +1,8 @@
+titulo: "Análisis simple de gasto mensual"
+descripcion: "Proyecto para analizar y clasificar gastos mensuales de un hogar usando listas, funciones y condicionales, con manejo de archivos."
+sesion: 5
+proposito: "Este proyecto permite practicar listas, funciones y condicionales para analizar y clasificar gastos mensuales de un hogar."
+tipo: "proyecto"
+unidad: 1
+dificultad: "básico"
+librerias: []

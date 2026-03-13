@@ -1,0 +1,8 @@
+titulo: "Introducción al análisis de datos económicos con Python y Excel"
+descripcion: "Sesión para comprender la integración básica entre Python y Excel para análisis de datos económicos."
+sesion: 1
+proposito: "Que el estudiante comprenda la integración básica entre Python y Excel para análisis de datos económicos."
+tipo: "sesion"
+unidad: 5
+dificultad: "intermedio"
+librerias: ["pandas", "openpyxl"]

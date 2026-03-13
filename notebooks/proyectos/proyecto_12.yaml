@@ -1,0 +1,8 @@
+titulo: "Manejo de bases de datos con SQLite y Python"
+descripcion: "Proyecto para aprender a crear, insertar, consultar y actualizar datos en una base de datos SQLite con Python, usando datos económicos."
+sesion: 2
+proposito: "Que el estudiante aprenda a manejar bases de datos relacionales básicas para almacenar y consultar información económica con Python."
+tipo: "proyecto"
+unidad: 3
+dificultad: "intermedio"
+librerias: ["sqlite3"]

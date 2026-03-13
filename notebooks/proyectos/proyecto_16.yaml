@@ -1,0 +1,8 @@
+titulo: "Análisis de series temporales económicas con pandas"
+descripcion: "Proyecto para importar, analizar y visualizar series temporales económicas usando pandas y matplotlib."
+sesion: 1
+proposito: "Que el estudiante aprenda a manejar series temporales económicas, realizar análisis básicos y visualizar tendencias con Python."
+tipo: "proyecto"
+unidad: 4
+dificultad: "intermedio"
+librerias: ["pandas", "matplotlib"]

@@ -1,0 +1,8 @@
+titulo: "Sintaxis y estructuras básicas"
+descripcion: "Aprender la sintaxis fundamental de Python, incluyendo indentación, print() e input()."
+sesion: 1
+proposito: "Que el estudiante comprenda y aplique la sintaxis básica de Python, respetando la indentación y utilizando funciones básicas de entrada y salida."
+tipo: "sesión"
+unidad: 1
+dificultad: "básico"
+librerias: []

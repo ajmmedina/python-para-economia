@@ -1,0 +1,8 @@
+titulo: "Análisis de datos económicos con Python y Excel"
+descripcion: "Proyecto para integrar Python y Excel en el análisis de datos económicos, usando pandas y openpyxl."
+sesion: 1
+proposito: "Que el estudiante aprenda a importar, analizar y exportar datos económicos entre Python y Excel, automatizando procesos."
+tipo: "proyecto"
+unidad: 5
+dificultad: "intermedio"
+librerias: ["pandas", "openpyxl"]

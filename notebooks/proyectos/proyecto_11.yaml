@@ -1,0 +1,8 @@
+titulo: "Introducción a la Programación Orientada a Objetos (POO) en Python"
+descripcion: "Proyecto para comprender y aplicar los conceptos básicos de la programación orientada a objetos, creando clases y objetos con ejemplos económicos."
+sesion: 1
+proposito: "Que el estudiante entienda los fundamentos de la POO y pueda modelar entidades económicas mediante clases y objetos en Python."
+tipo: "proyecto"
+unidad: 3
+dificultad: "intermedio"
+librerias: []

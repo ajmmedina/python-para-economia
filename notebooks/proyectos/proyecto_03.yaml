@@ -1,0 +1,8 @@
+titulo: "Análisis simple de desempleo trimestral"
+descripcion: "Proyecto para analizar tasas de desempleo trimestrales usando listas, funciones y condicionales, con clasificación y manejo de archivos."
+sesion: 3
+proposito: "Este proyecto introduce el uso de listas, funciones y condicionales para analizar tasas de desempleo trimestrales y clasificarlas."
+tipo: "proyecto"
+unidad: 1
+dificultad: "básico"
+librerias: []

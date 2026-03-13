@@ -1,0 +1,8 @@
+titulo: "Visualización avanzada de datos económicos con seaborn"
+descripcion: "Proyecto para crear gráficos estadísticos avanzados con seaborn, facilitando análisis visuales complejos."
+sesion: 4
+proposito: "Que el estudiante aprenda a usar seaborn para visualizar relaciones y distribuciones en datos económicos."
+tipo: "proyecto"
+unidad: 2
+dificultad: "intermedio"
+librerias: ["seaborn", "matplotlib"]

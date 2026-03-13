@@ -1,0 +1,8 @@
+titulo: "Automatización de procesos financieros con Python"
+descripcion: "Proyecto para automatizar tareas financieras repetitivas usando Python y librerías de automatización."
+sesion: 5
+proposito: "Que el estudiante desarrolle scripts para automatizar procesos financieros y mejorar eficiencia."
+tipo: "proyecto"
+unidad: 5
+dificultad: "intermedio"
+librerias: ["pandas", "openpyxl", "schedule"]

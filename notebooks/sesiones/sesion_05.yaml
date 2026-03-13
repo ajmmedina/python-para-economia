@@ -1,0 +1,8 @@
+titulo: "Funciones y modularidad"
+descripcion: "Comprender y aplicar funciones para organizar y reutilizar código en Python."
+sesion: 5
+proposito: "Que el estudiante comprenda la importancia de las funciones para organizar y reutilizar código, y aprenda a definir y usar funciones en Python."
+tipo: "sesión"
+unidad: 1
+dificultad: "básico"
+librerias: []

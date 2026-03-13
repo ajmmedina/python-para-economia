@@ -1,0 +1,8 @@
+titulo: "Control de flujo y estructuras condicionales"
+descripcion: "Comprender y aplicar estructuras condicionales y operadores lógicos para controlar el flujo de programas en Python."
+sesion: 3
+proposito: "Que el estudiante comprenda y aplique estructuras de control de flujo y condicionales para tomar decisiones en sus programas."
+tipo: "sesión"
+unidad: 1
+dificultad: "básico"
+librerias: []

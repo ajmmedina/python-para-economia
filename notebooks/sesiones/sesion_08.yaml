@@ -1,0 +1,8 @@
+titulo: "Visualización de datos y gráficos"
+descripcion: "Aprender a crear visualizaciones y gráficos en Python para interpretar datos económicos de manera clara y efectiva."
+sesion: 8
+proposito: "Que el estudiante aprenda a crear visualizaciones y gráficos en Python para interpretar datos económicos de manera clara y efectiva."
+tipo: "sesión"
+unidad: 2
+dificultad: "intermedio"
+librerias: ["matplotlib"]

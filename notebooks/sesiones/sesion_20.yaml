@@ -1,0 +1,8 @@
+titulo: "Automatización de procesos financieros con Python"
+descripcion: "Sesión para desarrollar scripts para automatizar procesos financieros y mejorar eficiencia."
+sesion: 5
+proposito: "Que el estudiante desarrolle scripts para automatizar procesos financieros y mejorar eficiencia."
+tipo: "sesion"
+unidad: 5
+dificultad: "intermedio"
+librerias: ["pandas", "openpyxl", "schedule"]

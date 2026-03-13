@@ -1,0 +1,8 @@
+titulo: "Manejo de archivos y librerías externas"
+descripcion: "Aprender a manejar archivos y usar librerías externas para análisis de datos económicos en Python."
+sesion: 7
+proposito: "Que el estudiante aprenda a manejar archivos y utilizar librerías externas en Python para procesar datos económicos de manera eficiente."
+tipo: "sesión"
+unidad: 1
+dificultad: "intermedio"
+librerias: ["pandas"]

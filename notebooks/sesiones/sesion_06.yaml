@@ -1,0 +1,8 @@
+titulo: "Manejo de datos con listas y diccionarios"
+descripcion: "Aprender a usar listas y diccionarios para organizar y analizar datos económicos en Python."
+sesion: 6
+proposito: "Que el estudiante aprenda a manejar estructuras de datos fundamentales en Python, como listas y diccionarios, para organizar y analizar información económica."
+tipo: "sesión"
+unidad: 1
+dificultad: "básico"
+librerias: []

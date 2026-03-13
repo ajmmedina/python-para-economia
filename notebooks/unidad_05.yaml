@@ -1,0 +1,4 @@
+unidad: 5
+titulo: "Análisis de datos económicos con Python y Excel"
+descripcion: "Proyecto para integrar Python y Excel en el análisis de datos económicos, usando pandas y openpyxl."
+objetivo: "Que el estudiante aprenda a manejar datos económicos usando Python y Excel, integrando análisis y automatización."

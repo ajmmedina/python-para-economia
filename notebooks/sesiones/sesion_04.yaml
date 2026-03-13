@@ -1,0 +1,8 @@
+titulo: "Bucles y estructuras repetitivas"
+descripcion: "Comprender y aplicar bucles for y while para automatizar tareas repetitivas en Python."
+sesion: 4
+proposito: "Que el estudiante comprenda y aplique estructuras repetitivas para automatizar tareas que requieren repetir acciones en sus programas."
+tipo: "sesión"
+unidad: 1
+dificultad: "básico"
+librerias: []

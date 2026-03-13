@@ -1,0 +1,8 @@
+titulo: "Manipulación avanzada de datos con pandas"
+descripcion: "Proyecto para realizar filtrado, agrupamiento y transformación de datos económicos usando pandas."
+sesion: 3
+proposito: "Que el estudiante aprenda a manipular datos complejos con pandas para preparar análisis económicos detallados."
+tipo: "proyecto"
+unidad: 2
+dificultad: "intermedio"
+librerias: ["pandas"]

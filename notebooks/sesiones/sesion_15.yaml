@@ -1,0 +1,8 @@
+titulo: "Introducción a análisis de series temporales en Python para economía"
+descripcion: "Introducir conceptos básicos y técnicas para analizar series temporales aplicadas a datos económicos."
+sesion: 15
+proposito: "Introducir conceptos básicos y técnicas para analizar series temporales aplicadas a datos económicos."
+tipo: "sesión"
+unidad: 4
+dificultad: "intermedio"
+librerias: ["pandas", "matplotlib", "statsmodels"]

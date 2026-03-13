@@ -1,0 +1,8 @@
+titulo: "Fundamentos de programación funcional en Python para economía"
+descripcion: "Introducir los conceptos básicos de programación funcional y su aplicación en análisis económico."
+sesion: 13
+proposito: "Introducir los conceptos básicos de programación funcional y su aplicación en análisis económico."
+tipo: "sesión"
+unidad: 4
+dificultad: "intermedio"
+librerias: ["functools"]

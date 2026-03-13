@@ -1,0 +1,8 @@
+titulo: "Análisis básico de datos económicos con pandas"
+descripcion: "Proyecto para manipular y analizar datos económicos usando pandas, enfocándose en importación, limpieza y resumen de datos."
+sesion: 1
+proposito: "Que el estudiante aprenda a importar datos reales, limpiarlos y obtener resúmenes estadísticos básicos usando pandas, aplicando estos conocimientos a datos económicos."
+tipo: "proyecto"
+unidad: 2
+dificultad: "intermedio"
+librerias: ["pandas"]

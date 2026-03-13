@@ -1,0 +1,8 @@
+titulo: "Integración de bases de datos y POO para gestión económica"
+descripcion: "Proyecto para integrar programación orientada a objetos y bases de datos, gestionando datos económicos con clases y SQLite."
+sesion: 5
+proposito: "Que el estudiante integre POO y bases de datos para crear aplicaciones que gestionen datos económicos de forma estructurada y eficiente."
+tipo: "proyecto"
+unidad: 3
+dificultad: "avanzado"
+librerias: ["sqlite3"]

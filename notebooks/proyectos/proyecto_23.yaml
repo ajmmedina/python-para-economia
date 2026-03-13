@@ -1,0 +1,8 @@
+titulo: "Visualización interactiva de datos económicos"
+descripcion: "Proyecto para crear visualizaciones interactivas de datos económicos usando Plotly y Dash."
+sesion: 3
+proposito: "Que el estudiante aprenda a crear dashboards interactivos para explorar datos económicos."
+tipo: "proyecto"
+unidad: 5
+dificultad: "avanzado"
+librerias: ["plotly", "dash"]

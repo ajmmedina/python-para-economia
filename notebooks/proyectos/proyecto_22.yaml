@@ -1,0 +1,8 @@
+titulo: "Modelado financiero con Python"
+descripcion: "Proyecto para crear modelos financieros básicos usando Python, aplicando funciones y simulaciones."
+sesion: 2
+proposito: "Que el estudiante desarrolle modelos financieros simples para evaluar escenarios y tomar decisiones."
+tipo: "proyecto"
+unidad: 5
+dificultad: "intermedio"
+librerias: ["numpy"]

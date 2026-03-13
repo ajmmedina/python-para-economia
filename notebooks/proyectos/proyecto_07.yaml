@@ -1,0 +1,8 @@
+titulo: "Visualización básica de datos económicos con matplotlib"
+descripcion: "Proyecto para crear gráficos básicos de datos económicos usando matplotlib, enfocándose en líneas, barras y personalización simple."
+sesion: 2
+proposito: "Que el estudiante aprenda a visualizar datos económicos con gráficos básicos, facilitando la interpretación visual de tendencias y comparaciones."
+tipo: "proyecto"
+unidad: 2
+dificultad: "intermedio"
+librerias: ["matplotlib"]

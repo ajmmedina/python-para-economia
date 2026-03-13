@@ -1,0 +1,8 @@
+titulo: "Introducción a bases de datos y SQL"
+descripcion: "Aprender los conceptos básicos de bases de datos y SQL, y cómo integrarlos con Python para manejar datos económicos."
+sesion: 12
+proposito: "Que el estudiante aprenda los conceptos básicos de bases de datos y SQL, y cómo integrarlos con Python para manejar datos económicos de manera eficiente."
+tipo: "sesión"
+unidad: 3
+dificultad: "intermedio"
+librerias: ["sqlite3"]
