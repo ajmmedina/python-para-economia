@@ -1,0 +1,540 @@
+{
+    "unidades": [
+        {
+            "unidad": 1,
+            "titulo": "Fundamentos de Python para Economía",
+            "descripcion": "Introducción a la programación en Python con énfasis en aplicaciones económicas, cubriendo sintaxis, estructuras de control, funciones y manejo de archivos.",
+            "objetivo": "Que el estudiante adquiera las bases de la programación en Python, comprendiendo la sintaxis, estructuras de datos, control de flujo, funciones y manejo de archivos, aplicando estos conceptos en ejemplos prácticos relacionados con economía.",
+            "sesiones": [
+                {
+                    "titulo": "Sintaxis y estructuras básicas",
+                    "descripcion": "Aprender la sintaxis fundamental de Python, incluyendo indentación, print() e input().",
+                    "proposito": "Que el estudiante comprenda y aplique la sintaxis básica de Python, respetando la indentación y utilizando funciones básicas de entrada y salida.",
+                    "dificultad": "básico",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_01.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_01.ipynb"
+                },
+                {
+                    "titulo": "Variables y tipos de datos",
+                    "descripcion": "Explorar los diferentes tipos de datos en Python y cómo usarlos para organizar información.",
+                    "proposito": "Que el estudiante manipule distintos tipos de datos en Python y comprenda las estructuras básicas para organizar información.",
+                    "dificultad": "básico",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_02.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_02.ipynb"
+                },
+                {
+                    "titulo": "Control de flujo y estructuras condicionales",
+                    "descripcion": "Comprender y aplicar estructuras condicionales y operadores lógicos para controlar el flujo de programas en Python.",
+                    "proposito": "Que el estudiante comprenda y aplique estructuras de control de flujo y condicionales para tomar decisiones en sus programas.",
+                    "dificultad": "básico",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_03.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_03.ipynb"
+                },
+                {
+                    "titulo": "Bucles y estructuras repetitivas",
+                    "descripcion": "Comprender y aplicar bucles for y while para automatizar tareas repetitivas en Python.",
+                    "proposito": "Que el estudiante comprenda y aplique estructuras repetitivas para automatizar tareas que requieren repetir acciones en sus programas.",
+                    "dificultad": "básico",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_04.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_04.ipynb"
+                },
+                {
+                    "titulo": "Funciones y modularidad",
+                    "descripcion": "Comprender y aplicar funciones para organizar y reutilizar código en Python.",
+                    "proposito": "Que el estudiante comprenda la importancia de las funciones para organizar y reutilizar código, y aprenda a definir y usar funciones en Python.",
+                    "dificultad": "básico",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_05.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_05.ipynb"
+                },
+                {
+                    "titulo": "Manejo de datos con listas y diccionarios",
+                    "descripcion": "Aprender a usar listas y diccionarios para organizar y analizar datos económicos en Python.",
+                    "proposito": "Que el estudiante aprenda a manejar estructuras de datos fundamentales en Python, como listas y diccionarios, para organizar y analizar información económica.",
+                    "dificultad": "básico",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_06.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_06.ipynb"
+                },
+                {
+                    "titulo": "Manejo de archivos y librerías externas",
+                    "descripcion": "Aprender a manejar archivos y usar librerías externas para análisis de datos económicos en Python.",
+                    "proposito": "Que el estudiante aprenda a manejar archivos y utilizar librerías externas en Python para procesar datos económicos de manera eficiente.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "pandas"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_07.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_07.ipynb"
+                }
+            ],
+            "proyectos": [
+                {
+                    "titulo": "Cálculo de indicadores económicos básicos con Python",
+                    "descripcion": "Proyecto para aplicar variables, listas, funciones, condicionales y manejo básico de archivos en un contexto económico realista.",
+                    "proposito": "Este proyecto tiene como objetivo que el estudiante aplique conceptos fundamentales de Python —variables, listas, funciones, estructuras condicionales y manejo básico de archivos— para calcular y clasificar un indicador económico realista: el crecimiento trimestral del PIB. Así, se refuerzan habilidades de programación básicas en un contexto económico.",
+                    "dificultad": "básico",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_01.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_01.ipynb"
+                },
+                {
+                    "titulo": "Cálculo de inflación promedio y clasificación simple",
+                    "descripcion": "Proyecto para calcular inflación promedio anual y clasificarla usando listas, funciones y condicionales en un contexto económico.",
+                    "proposito": "Este proyecto refuerza el manejo de listas, funciones y condicionales para calcular la inflación promedio anual y clasificarla según niveles económicos.",
+                    "dificultad": "básico",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_02.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_02.ipynb"
+                },
+                {
+                    "titulo": "Análisis simple de desempleo trimestral",
+                    "descripcion": "Proyecto para analizar tasas de desempleo trimestrales usando listas, funciones y condicionales, con clasificación y manejo de archivos.",
+                    "proposito": "Este proyecto introduce el uso de listas, funciones y condicionales para analizar tasas de desempleo trimestrales y clasificarlas.",
+                    "dificultad": "básico",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_03.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_03.ipynb"
+                },
+                {
+                    "titulo": "Cálculo de ahorro promedio mensual",
+                    "descripcion": "Proyecto para calcular y clasificar el ahorro mensual de una familia usando listas, funciones y condicionales, con manejo de archivos.",
+                    "proposito": "Este proyecto refuerza el uso de listas, funciones y condicionales para calcular y clasificar el ahorro mensual de una familia.",
+                    "dificultad": "básico",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_04.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_04.ipynb"
+                },
+                {
+                    "titulo": "Análisis simple de gasto mensual",
+                    "descripcion": "Proyecto para analizar y clasificar gastos mensuales de un hogar usando listas, funciones y condicionales, con manejo de archivos.",
+                    "proposito": "Este proyecto permite practicar listas, funciones y condicionales para analizar y clasificar gastos mensuales de un hogar.",
+                    "dificultad": "básico",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_05.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_05.ipynb"
+                }
+            ]
+        },
+        {
+            "unidad": 2,
+            "titulo": "Visualización y análisis de datos",
+            "descripcion": "Exploración y representación gráfica de datos económicos utilizando librerías de visualización en Python para facilitar el análisis y la interpretación.",
+            "objetivo": "Que el estudiante desarrolle habilidades para visualizar y analizar datos económicos mediante gráficos básicos y avanzados, aplicando técnicas que faciliten la comprensión de patrones y tendencias.",
+            "sesiones": [
+                {
+                    "titulo": "Visualización de datos y gráficos",
+                    "descripcion": "Aprender a crear visualizaciones y gráficos en Python para interpretar datos económicos de manera clara y efectiva.",
+                    "proposito": "Que el estudiante aprenda a crear visualizaciones y gráficos en Python para interpretar datos económicos de manera clara y efectiva.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "matplotlib"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_08.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_08.ipynb"
+                },
+                {
+                    "titulo": "Visualización avanzada y análisis de datos económicos",
+                    "descripcion": "Aprender a utilizar librerías avanzadas para visualización y análisis de datos económicos en Python.",
+                    "proposito": "Que el estudiante aprenda a utilizar librerías avanzadas para visualización y análisis de datos económicos en Python, aplicando técnicas prácticas para interpretar información compleja.",
+                    "dificultad": "avanzado",
+                    "librerias": [
+                        "seaborn",
+                        "pandas",
+                        "numpy",
+                        "matplotlib"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_09.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_09.ipynb"
+                }
+            ],
+            "proyectos": [
+                {
+                    "titulo": "Análisis básico de datos económicos con pandas",
+                    "descripcion": "Proyecto para manipular y analizar datos económicos usando pandas, enfocándose en importación, limpieza y resumen de datos.",
+                    "proposito": "Que el estudiante aprenda a importar datos reales, limpiarlos y obtener resúmenes estadísticos básicos usando pandas, aplicando estos conocimientos a datos económicos.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "pandas"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_06.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_06.ipynb"
+                },
+                {
+                    "titulo": "Visualización básica de datos económicos con matplotlib",
+                    "descripcion": "Proyecto para crear gráficos básicos de datos económicos usando matplotlib, enfocándose en líneas, barras y personalización simple.",
+                    "proposito": "Que el estudiante aprenda a visualizar datos económicos con gráficos básicos, facilitando la interpretación visual de tendencias y comparaciones.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "matplotlib"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_07.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_07.ipynb"
+                },
+                {
+                    "titulo": "Manipulación avanzada de datos con pandas",
+                    "descripcion": "Proyecto para realizar filtrado, agrupamiento y transformación de datos económicos usando pandas.",
+                    "proposito": "Que el estudiante aprenda a manipular datos complejos con pandas para preparar análisis económicos detallados.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "pandas"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_08.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_08.ipynb"
+                },
+                {
+                    "titulo": "Visualización avanzada de datos económicos con seaborn",
+                    "descripcion": "Proyecto para crear gráficos estadísticos avanzados con seaborn, facilitando análisis visuales complejos.",
+                    "proposito": "Que el estudiante aprenda a usar seaborn para visualizar relaciones y distribuciones en datos económicos.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "seaborn",
+                        "matplotlib"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_09.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_09.ipynb"
+                },
+                {
+                    "titulo": "Análisis estadístico básico con pandas y scipy",
+                    "descripcion": "Proyecto para realizar análisis estadísticos básicos y pruebas de hipótesis en datos económicos.",
+                    "proposito": "Que el estudiante aprenda a aplicar análisis estadísticos y pruebas de hipótesis usando pandas y scipy en economía.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "pandas",
+                        "scipy"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_10.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_10.ipynb"
+                }
+            ]
+        },
+        {
+            "unidad": 3,
+            "titulo": "Programación orientada a objetos y bases de datos",
+            "descripcion": "Introducción a la programación orientada a objetos y bases de datos con aplicaciones en economía, cubriendo conceptos, diseño y consultas SQL.",
+            "objetivo": "Que el estudiante comprenda y aplique los principios de la programación orientada a objetos y el manejo de bases de datos, desarrollando aplicaciones económicas prácticas y consultas SQL eficientes.",
+            "sesiones": [
+                {
+                    "titulo": "Introducción a la programación orientada a objetos (POO)",
+                    "descripcion": "Comprender y aplicar los conceptos básicos de POO en Python con ejemplos aplicados a economía.",
+                    "proposito": "Que el estudiante comprenda los conceptos básicos de la programación orientada a objetos y aprenda a aplicarlos en Python con ejemplos económicos.",
+                    "dificultad": "intermedio",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_10.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_10.ipynb"
+                },
+                {
+                    "titulo": "Programación orientada a objetos avanzada y aplicaciones económicas",
+                    "descripcion": "Profundizar en conceptos avanzados de POO y aplicarlos en problemas económicos complejos usando Python.",
+                    "proposito": "Que el estudiante profundice en conceptos avanzados de programación orientada a objetos y aplique estos conocimientos en problemas económicos complejos.",
+                    "dificultad": "avanzado",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_11.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_11.ipynb"
+                },
+                {
+                    "titulo": "Introducción a bases de datos y SQL",
+                    "descripcion": "Aprender los conceptos básicos de bases de datos y SQL, y cómo integrarlos con Python para manejar datos económicos.",
+                    "proposito": "Que el estudiante aprenda los conceptos básicos de bases de datos y SQL, y cómo integrarlos con Python para manejar datos económicos de manera eficiente.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "sqlite3"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_12.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_12.ipynb"
+                }
+            ],
+            "proyectos": [
+                {
+                    "titulo": "Introducción a la Programación Orientada a Objetos (POO) en Python",
+                    "descripcion": "Proyecto para comprender y aplicar los conceptos básicos de la programación orientada a objetos, creando clases y objetos con ejemplos económicos.",
+                    "proposito": "Que el estudiante entienda los fundamentos de la POO y pueda modelar entidades económicas mediante clases y objetos en Python.",
+                    "dificultad": "intermedio",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_11.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_11.ipynb"
+                },
+                {
+                    "titulo": "Manejo de bases de datos con SQLite y Python",
+                    "descripcion": "Proyecto para aprender a crear, insertar, consultar y actualizar datos en una base de datos SQLite con Python, usando datos económicos.",
+                    "proposito": "Que el estudiante aprenda a manejar bases de datos relacionales básicas para almacenar y consultar información económica con Python.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "sqlite3"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_12.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_12.ipynb"
+                },
+                {
+                    "titulo": "Consultas avanzadas en bases de datos con SQL",
+                    "descripcion": "Proyecto para practicar consultas SQL avanzadas en bases de datos económicas usando Python y SQLite.",
+                    "proposito": "Que el estudiante domine consultas SQL complejas para extraer información relevante de bases de datos económicas.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "sqlite3"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_13.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_13.ipynb"
+                },
+                {
+                    "titulo": "Diseño y uso de clases para análisis económico",
+                    "descripcion": "Proyecto para diseñar clases complejas que representen modelos económicos y permitan cálculos y simulaciones.",
+                    "proposito": "Que el estudiante aplique POO para modelar sistemas económicos y realizar cálculos y simulaciones con clases y métodos.",
+                    "dificultad": "avanzado",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_14.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_14.ipynb"
+                },
+                {
+                    "titulo": "Integración de bases de datos y POO para gestión económica",
+                    "descripcion": "Proyecto para integrar programación orientada a objetos y bases de datos, gestionando datos económicos con clases y SQLite.",
+                    "proposito": "Que el estudiante integre POO y bases de datos para crear aplicaciones que gestionen datos económicos de forma estructurada y eficiente.",
+                    "dificultad": "avanzado",
+                    "librerias": [
+                        "sqlite3"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_15.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_15.ipynb"
+                }
+            ]
+        },
+        {
+            "unidad": 4,
+            "titulo": "Programación funcional y análisis de series temporales",
+            "descripcion": "Estudio de la programación funcional y análisis de series temporales aplicados a economía, con técnicas avanzadas y aplicaciones prácticas.",
+            "objetivo": "Que el estudiante desarrolle competencias en programación funcional y análisis de series temporales, aplicando métodos avanzados para el estudio de datos económicos temporales.",
+            "sesiones": [
+                {
+                    "titulo": "Fundamentos de programación funcional en Python para economía",
+                    "descripcion": "Introducir los conceptos básicos de programación funcional y su aplicación en análisis económico.",
+                    "proposito": "Introducir los conceptos básicos de programación funcional y su aplicación en análisis económico.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "functools"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_13.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_13.ipynb"
+                },
+                {
+                    "titulo": "Programación funcional avanzada y aplicaciones económicas",
+                    "descripcion": "Profundizar en técnicas avanzadas de programación funcional y su uso en problemas económicos complejos.",
+                    "proposito": "Profundizar en técnicas avanzadas de programación funcional y su uso en problemas económicos complejos.",
+                    "dificultad": "avanzado",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_14.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_14.ipynb"
+                },
+                {
+                    "titulo": "Introducción a análisis de series temporales en Python para economía",
+                    "descripcion": "Introducir conceptos básicos y técnicas para analizar series temporales aplicadas a datos económicos.",
+                    "proposito": "Introducir conceptos básicos y técnicas para analizar series temporales aplicadas a datos económicos.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "pandas",
+                        "matplotlib",
+                        "statsmodels"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_15.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_15.ipynb"
+                }
+            ],
+            "proyectos": [
+                {
+                    "titulo": "Análisis de series temporales económicas con pandas",
+                    "descripcion": "Proyecto para importar, analizar y visualizar series temporales económicas usando pandas y matplotlib.",
+                    "proposito": "Que el estudiante aprenda a manejar series temporales económicas, realizar análisis básicos y visualizar tendencias con Python.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "pandas",
+                        "matplotlib"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_16.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_16.ipynb"
+                },
+                {
+                    "titulo": "Modelado de datos económicos con clases y herencia",
+                    "descripcion": "Proyecto para diseñar clases y aplicar herencia para modelar diferentes tipos de datos económicos.",
+                    "proposito": "Que el estudiante aplique programación orientada a objetos avanzada para modelar datos económicos con jerarquías y herencia.",
+                    "dificultad": "intermedio",
+                    "librerias": [],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_17.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_17.ipynb"
+                },
+                {
+                    "titulo": "Visualización avanzada de datos económicos con seaborn",
+                    "descripcion": "Proyecto para crear gráficos estadísticos avanzados con seaborn para analizar relaciones y distribuciones en datos económicos.",
+                    "proposito": "Que el estudiante aprenda a usar seaborn para visualizar relaciones complejas y distribuciones en datos económicos.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "seaborn",
+                        "matplotlib"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_18.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_18.ipynb"
+                },
+                {
+                    "titulo": "Análisis de regresión lineal simple con statsmodels",
+                    "descripcion": "Proyecto para realizar análisis de regresión lineal simple en datos económicos usando statsmodels.",
+                    "proposito": "Que el estudiante aprenda a aplicar regresión lineal simple para modelar relaciones económicas y evaluar resultados.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "pandas",
+                        "statsmodels"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_19.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_19.ipynb"
+                },
+                {
+                    "titulo": "Automatización de reportes económicos con Python",
+                    "descripcion": "Proyecto para automatizar la generación de reportes económicos combinando análisis, visualización y exportación a PDF o HTML.",
+                    "proposito": "Que el estudiante aprenda a automatizar la creación de reportes económicos integrando análisis y visualización con Python.",
+                    "dificultad": "avanzado",
+                    "librerias": [
+                        "pandas",
+                        "matplotlib",
+                        "jinja2",
+                        "pdfkit"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_20.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_20.ipynb"
+                }
+            ]
+        },
+        {
+            "unidad": 5,
+            "titulo": "Análisis de datos económicos con Python y Excel",
+            "descripcion": "Proyecto para integrar Python y Excel en el análisis de datos económicos, usando pandas y openpyxl.",
+            "objetivo": "Que el estudiante aprenda a manejar datos económicos usando Python y Excel, integrando análisis y automatización.",
+            "sesiones": [
+                {
+                    "titulo": "Introducción al análisis de datos económicos con Python y Excel",
+                    "descripcion": "Sesión para comprender la integración básica entre Python y Excel para análisis de datos económicos.",
+                    "proposito": "Que el estudiante comprenda la integración básica entre Python y Excel para análisis de datos económicos.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "pandas",
+                        "openpyxl"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_16.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_16.ipynb"
+                },
+                {
+                    "titulo": "Modelado financiero básico con Python",
+                    "descripcion": "Sesión para desarrollar modelos financieros simples para evaluar escenarios y tomar decisiones.",
+                    "proposito": "Que el estudiante desarrolle modelos financieros simples para evaluar escenarios y tomar decisiones.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "numpy"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_17.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_17.ipynb"
+                },
+                {
+                    "titulo": "Visualización interactiva de datos económicos",
+                    "descripcion": "Sesión para aprender a crear dashboards interactivos para explorar datos económicos.",
+                    "proposito": "Que el estudiante aprenda a crear dashboards interactivos para explorar datos económicos.",
+                    "dificultad": "avanzado",
+                    "librerias": [
+                        "plotly",
+                        "dash"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_18.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_18.ipynb"
+                },
+                {
+                    "titulo": "Análisis de riesgo financiero con Python",
+                    "descripcion": "Sesión para aprender a calcular y analizar riesgos financieros aplicando estadística y simulación.",
+                    "proposito": "Que el estudiante aprenda a calcular y analizar riesgos financieros aplicando estadística y simulación.",
+                    "dificultad": "avanzado",
+                    "librerias": [
+                        "numpy",
+                        "scipy",
+                        "matplotlib"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_19.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_19.ipynb"
+                },
+                {
+                    "titulo": "Automatización de procesos financieros con Python",
+                    "descripcion": "Sesión para desarrollar scripts para automatizar procesos financieros y mejorar eficiencia.",
+                    "proposito": "Que el estudiante desarrolle scripts para automatizar procesos financieros y mejorar eficiencia.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "pandas",
+                        "openpyxl",
+                        "schedule"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/sesiones/sesion_20.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/sesiones/sesion_20.ipynb"
+                }
+            ],
+            "proyectos": [
+                {
+                    "titulo": "Análisis de datos económicos con Python y Excel",
+                    "descripcion": "Proyecto para integrar Python y Excel en el análisis de datos económicos, usando pandas y openpyxl.",
+                    "proposito": "Que el estudiante aprenda a importar, analizar y exportar datos económicos entre Python y Excel, automatizando procesos.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "pandas",
+                        "openpyxl"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_21.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_21.ipynb"
+                },
+                {
+                    "titulo": "Modelado financiero con Python",
+                    "descripcion": "Proyecto para crear modelos financieros básicos usando Python, aplicando funciones y simulaciones.",
+                    "proposito": "Que el estudiante desarrolle modelos financieros simples para evaluar escenarios y tomar decisiones.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "numpy"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_22.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_22.ipynb"
+                },
+                {
+                    "titulo": "Visualización interactiva de datos económicos",
+                    "descripcion": "Proyecto para crear visualizaciones interactivas de datos económicos usando Plotly y Dash.",
+                    "proposito": "Que el estudiante aprenda a crear dashboards interactivos para explorar datos económicos.",
+                    "dificultad": "avanzado",
+                    "librerias": [
+                        "plotly",
+                        "dash"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_23.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_23.ipynb"
+                },
+                {
+                    "titulo": "Análisis de riesgo financiero con Python",
+                    "descripcion": "Proyecto para evaluar riesgos financieros usando técnicas estadísticas y simulaciones en Python.",
+                    "proposito": "Que el estudiante aprenda a calcular y analizar riesgos financieros aplicando estadística y simulación.",
+                    "dificultad": "avanzado",
+                    "librerias": [
+                        "numpy",
+                        "scipy",
+                        "matplotlib"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_24.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_24.ipynb"
+                },
+                {
+                    "titulo": "Automatización de procesos financieros con Python",
+                    "descripcion": "Proyecto para automatizar tareas financieras repetitivas usando Python y librerías de automatización.",
+                    "proposito": "Que el estudiante desarrolle scripts para automatizar procesos financieros y mejorar eficiencia.",
+                    "dificultad": "intermedio",
+                    "librerias": [
+                        "pandas",
+                        "openpyxl",
+                        "schedule"
+                    ],
+                    "raw_url": "https://raw.githubusercontent.com/ajmmedina/python-para-economia/main/notebooks/proyectos/proyecto_25.ipynb",
+                    "colab_url": "https://colab.research.google.com/github/ajmmedina/python-para-economia/blob/main/notebooks/proyectos/proyecto_25.ipynb"
+                }
+            ]
+        }
+    ]
+}

@@ -1,5 +1,167 @@
-<h1 id="title"></h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Python para Economistas — Sesiones y proyectos de la unidad seleccionada.">
+    <title>Python para Economistas — Unidad</title>
+    <link rel="icon" type="image/webp" href="assets/img/logo_cuadrado.webp">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
-<div id="lessons" class="grid"></div>
+    <!-- Auth Gate (Locked Screen) -->
+    <div class="auth-gate" id="auth-gate" style="display: none;">
+        <div class="auth-gate-content">
+            <img src="assets/img/Logo_normal.webp" alt="Logo" class="auth-gate-logo">
+            <div class="auth-gate-lock">🔒</div>
+            <h2>Acceso Restringido</h2>
+            <p>Para acceder al material del curso de <strong>Python para Economistas</strong> y subir tus proyectos, necesitas iniciar sesión con tu cuenta de Google.</p>
+            <button class="btn-google" id="btn-google-login">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="G">
+                <span>Continuar con Google</span>
+            </button>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/Logo_normal.webp" alt="Python para Economistas" class="logo-img">
+            </a>
+            <div class="header-auth" id="header-auth">
+                <!-- User profile or login button will be injected here -->
+            </div>
+        </div>
+    </header>
 
-<script src="app.js"></script>
+    <!-- Hero Banner -->
+    <section class="unit-hero" id="unit-hero">
+        <div class="hero-content">
+            <a href="index.html" class="hero-back-link" id="hero-back">← Volver a unidades</a>
+            <span class="hero-unit-number" id="hero-unit-number"></span>
+            <h1 id="hero-title"></h1>
+            <p class="hero-desc" id="hero-desc"></p>
+            <p class="hero-obj" id="hero-obj"></p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Sessions -->
+        <section class="content-section" id="sessions-section">
+            <h2 class="section-title"><span class="icon">🎓</span> Sesiones</h2>
+            <div id="sessions-grid" class="card-grid">
+                <!-- Session cards rendered by JS -->
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="content-section" id="projects-section">
+            <h2 class="section-title"><span class="icon">🛠️</span> Proyectos</h2>
+            <div id="projects-grid" class="card-grid">
+                <!-- Project cards rendered by JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Upload Modal -->
+    <div class="modal-overlay" id="upload-modal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h2>📤 Subir cuaderno resuelto</h2>
+                <button class="modal-close" id="modal-close" aria-label="Cerrar">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <form id="uploadForm" class="upload-form" autocomplete="off">
+                    <!-- Email (Readonly) -->
+                    <div class="form-group">
+                        <label for="upload-nombre">Usuario activo</label>
+                        <input type="email" id="upload-nombre" class="user-email-display" readonly required>
+                    </div>
+                    <!-- Topic -->
+                    <div class="form-group">
+                        <label for="upload-tema">Sesión o Proyecto</label>
+                        <select id="upload-tema" required>
+                            <option value="" disabled selected>Selecciona el tema…</option>
+                            <!-- Options populated by JS -->
+                        </select>
+                    </div>
+                    <!-- File Drop Zone -->
+                    <div class="form-group">
+                        <label>Archivo .ipynb</label>
+                        <div class="drop-zone" id="drop-zone">
+                            <span class="drop-zone-icon">📁</span>
+                            <p class="drop-zone-text">Arrastra tu archivo aquí o <span class="drop-zone-browse">haz clic para seleccionar</span></p>
+                            <p class="drop-zone-hint">Solo archivos .ipynb (máx. 25 MB)</p>
+                            <input type="file" id="upload-file" accept=".ipynb" hidden>
+                        </div>
+                        <div class="file-preview" id="file-preview" style="display:none;">
+                            <span class="file-preview-icon">📓</span>
+                            <span class="file-preview-name" id="file-preview-name"></span>
+                            <button type="button" class="file-preview-remove" id="file-remove" aria-label="Quitar archivo">&times;</button>
+                        </div>
+                    </div>
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn-primary btn-upload-submit" id="upload-submit" disabled>
+                        <span class="btn-upload-label">Enviar evidencia</span>
+                        <span class="btn-upload-spinner" style="display:none;">⏳ Subiendo…</span>
+                    </button>
+                </form>
+                <!-- Status message -->
+                <div id="upload-msg" class="upload-msg" style="display:none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <img src="assets/img/Logo_normal.webp" alt="Logo" class="footer-logo">
+            <div class="footer-gradient-line"></div>
+            <div class="footer-contact">
+                <strong>Alexander Meza</strong>
+                <a href="mailto:alexander.josue@gmail.com">📧 alexander.josue@gmail.com</a>
+                <a href="mailto:ajmmedina.alexander@mique.host">📁 ajmmedina.alexander@mique.host (Drive)</a>
+                <button class="btn-coffee" id="btn-open-coffee" aria-label="Invítame un café" onclick="openCoffeeModal()">
+                    ☕ Invítame un café
+                </button>
+            </div>
+            <p class="footer-copy">
+                © 2026 <a href="index.html">Python para Economistas</a> — Creado con 💛 para futuros economistas.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Coffee Modal -->
+    <div class="modal-overlay" id="coffee-modal" style="display: none;">
+        <div class="modal-box" style="max-width: 400px; text-align: center;">
+            <div class="modal-header">
+                <h2>☕ Invítame un café</h2>
+                <button class="modal-close" id="coffee-close" aria-label="Cerrar" onclick="closeCoffeeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Si este curso te está siendo útil, puedes apoyarme con un cafecito a través de Yape. ¡Cualquier aporte es bienvenido!</p>
+                
+                <div class="coffee-qr-container">
+                    <div class="coffee-qr-placeholder">                        
+                        <img src="assets/img/mi_qr_yape.webp" alt="QR Yape" style="max-width: 100%;">
+                    </div>
+                </div>
+
+                <div class="coffee-goal">
+                    <strong>Meta:</strong> Comprar un nuevo curso de Econometría para compartirlo aquí.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK (compat v9) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
