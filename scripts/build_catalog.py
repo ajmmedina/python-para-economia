@@ -9,7 +9,8 @@ REPO = "python-para-economia"
 BRANCH = "main"
 
 def procesar_catalogo():
-    root_notebook = Path("..") / "notebooks"
+    # root_notebook = Path("..") / "notebooks"
+    root_notebook = Path("notebooks")
     raw_base_url = f"https://raw.githubusercontent.com/{USER}/{REPO}/{BRANCH}/"
     data = {"unidades": []}
     
@@ -61,7 +62,8 @@ def procesar_catalogo():
         data['unidades'].append(unidad_item)
 
     # 3. Guardar en carpeta site/assets/data
-    root_data = Path('..') / 'site' / 'assets' / 'data'
+    # root_data = Path('..') / 'site' / 'assets' / 'data'
+    root_data = Path('site') / 'assets' / 'data'
     os.makedirs(root_data, exist_ok=True)
     with open(root_data / 'catalog.json', 'w', encoding='utf-8') as jf:
         json.dump(data, jf, indent=4, ensure_ascii=False)
