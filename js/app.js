@@ -54,6 +54,27 @@
         return text.replace(/[<>:"/\\|?*]/g, '_').trim();
     }
 
+    // ---------- File Downloads ----------
+    window.downloadFile = async function (url, filename) {
+        try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error('Error en descarga');
+            const blob = await response.blob();
+            const urlObj = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = urlObj;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(urlObj);
+            document.body.removeChild(a);
+        } catch (e) {
+            console.error('Error al descargar:', e);
+            window.open(url, '_blank');
+        }
+    };
+
     // ---------- Card Renderers ----------
     function renderUnitCard(unit) {
         const sesCount = unit.sesiones ? unit.sesiones.length : 0;
@@ -86,11 +107,24 @@
         // En doPost mandamos Unidad_X_Tema_YY. Busquemos si submissionCounts tiene esa llave.
         const topicValue = `${type === 'session' ? 'Sesion' : 'Proyecto'}_${String(number).padStart(2, '0')}_${sanitize(item.titulo).substring(0, 40)}`;
         const fullTopicName = `Unidad_${currentUnit ? currentUnit.unidad : 'X'}_${topicValue}`;
-        
-        const count = submissionCounts[fullTopicName] || 0;
-        const deliveryBadgeHtml = count > 0 
-            ? `<div class="delivery-badge success" title="Has entregado este archivo ${count} vez/veces">✔️ Entregado: ${count}</div>`
-            : `<div class="delivery-badge pending" title="Aún no has entregado este archivo">⚪ Pendiente</div>`;
+
+        let count = 0;
+        let isFetching = false;
+        if (submissionCounts && submissionCounts[fullTopicName] !== undefined) {
+            count = submissionCounts[fullTopicName];
+        } else if (!window.countsLoaded && window.currentUser) {
+            isFetching = true;
+        }
+
+        let deliveryBadgeHtml = '';
+        if (isFetching) {
+            // Loader
+            deliveryBadgeHtml = `<div class="delivery-badge pending" title="Cargando estado..."><span class="loader-spinner" style="display:inline-block;width:10px;height:10px;border:2px solid;border-radius:50%;border-top-color:transparent;animation:spin 1s linear infinite;margin-right:4px;"></span> Cargando...</div>`;
+        } else if (count > 0) {
+            deliveryBadgeHtml = `<div class="delivery-badge success" title="Has entregado este archivo ${count} vez/veces">✔️ Entregado: ${count}</div>`;
+        } else {
+            deliveryBadgeHtml = `<div class="delivery-badge pending" title="Aún no has entregado este archivo">⚪ Pendiente</div>`;
+        }
 
         return `
         <article class="item-card" data-animate>
@@ -103,9 +137,6 @@
                         ${item.proposito}
                     </div>
                 </button>
-                <a class="action-icon-btn" href="${item.raw_url}" target="_blank" rel="noopener" title="Descargar .ipynb" aria-label="Descargar cuaderno">
-                    ⬇️
-                </a>
                 <button class="action-icon-btn upload-btn" title="Subir resuelto" onclick="openModal('${topicValue}')" aria-label="Subir cuaderno resuelto">
                     📤
                 </button>
@@ -120,13 +151,12 @@
                     <div class="stars">${difficultyStars(item.dificultad)}</div>
                 </div>
             </div>
-            <div class="item-card-footer">
                 <a href="${item.colab_url}" class="btn btn-colab btn-sm" target="_blank" rel="noopener">
                     ▶ Abrir en Colab
                 </a>
-                <a href="${item.raw_url}" class="btn btn-download btn-sm" target="_blank" rel="noopener">
+                <button onclick="downloadFile('${item.raw_url}', '${item.titulo}.ipynb')" class="btn btn-download btn-sm">
                     ⬇ Descargar
-                </a>
+                </button>
             </div>
         </article>`;
     }
@@ -230,7 +260,7 @@
     };
 
     // Coffee Modal
-    window.openCoffeeModal = function() {
+    window.openCoffeeModal = function () {
         const modal = document.getElementById('coffee-modal');
         if (modal) {
             modal.style.display = 'flex';
@@ -239,7 +269,7 @@
         }
     };
 
-    window.closeCoffeeModal = function() {
+    window.closeCoffeeModal = function () {
         const modal = document.getElementById('coffee-modal');
         if (modal) {
             modal.classList.remove('active');
@@ -408,43 +438,43 @@
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                     body: params
                 })
-                .then(() => {
-                    setLoading(false);
-                    showMsg('✅ ¡Archivo enviado con éxito! Tu evidencia ha sido recibida.', 'success');
-                    
-                    // Keep the readonly email value after reset
-                    const inputEmail = document.getElementById('upload-nombre');
-                    const emailVal = inputEmail ? inputEmail.value : '';
-                    form.reset();
-                    if (inputEmail) inputEmail.value = emailVal;
-                    
-                    clearFilePreview();
+                    .then(() => {
+                        setLoading(false);
+                        showMsg('✅ ¡Archivo enviado con éxito! Tu evidencia ha sido recibida.', 'success');
 
-                    // Update UI Badge Dynamically
-                    const fullTopicName = `Unidad_${currentUnit ? currentUnit.unidad : 'X'}_${tema}`;
-                    submissionCounts[fullTopicName] = (submissionCounts[fullTopicName] || 0) + 1;
-                    
-                    // Refresh cards to show new badge
-                    const sessionsGrid = document.getElementById('sessions-grid');
-                    const projectsGrid = document.getElementById('projects-grid');
-                    if (sessionsGrid && currentUnit && currentUnit.sesiones) {
-                        sessionsGrid.innerHTML = currentUnit.sesiones.map((s, i) => renderItemCard(s, 'session', i)).join('');
-                    }
-                    if (projectsGrid && currentUnit && currentUnit.proyectos) {
-                        projectsGrid.innerHTML = currentUnit.proyectos.map((p, i) => renderItemCard(p, 'project', i)).join('');
-                    }
-                    if (typeof observeCards === 'function') observeCards();
+                        // Keep the readonly email value after reset
+                        const inputEmail = document.getElementById('upload-nombre');
+                        const emailVal = inputEmail ? inputEmail.value : '';
+                        form.reset();
+                        if (inputEmail) inputEmail.value = emailVal;
 
-                    // Auto-close modal
-                    setTimeout(() => {
-                        if (typeof window.closeModal === 'function') window.closeModal();
-                    }, 2000);
-                })
-                .catch(err => {
-                    setLoading(false);
-                    showMsg('❌ Error al subir el archivo. Verifica tu conexión e intenta de nuevo.', 'error');
-                    console.error('Upload error:', err);
-                });
+                        clearFilePreview();
+
+                        // Update UI Badge Dynamically
+                        const fullTopicName = `Unidad_${currentUnit ? currentUnit.unidad : 'X'}_${tema}`;
+                        submissionCounts[fullTopicName] = (submissionCounts[fullTopicName] || 0) + 1;
+
+                        // Refresh cards to show new badge
+                        const sessionsGrid = document.getElementById('sessions-grid');
+                        const projectsGrid = document.getElementById('projects-grid');
+                        if (sessionsGrid && currentUnit && currentUnit.sesiones) {
+                            sessionsGrid.innerHTML = currentUnit.sesiones.map((s, i) => renderItemCard(s, 'session', i)).join('');
+                        }
+                        if (projectsGrid && currentUnit && currentUnit.proyectos) {
+                            projectsGrid.innerHTML = currentUnit.proyectos.map((p, i) => renderItemCard(p, 'project', i)).join('');
+                        }
+                        if (typeof observeCards === 'function') observeCards();
+
+                        // Auto-close modal
+                        setTimeout(() => {
+                            if (typeof window.closeModal === 'function') window.closeModal();
+                        }, 2000);
+                    })
+                    .catch(err => {
+                        setLoading(false);
+                        showMsg('❌ Error al subir el archivo. Verifica tu conexión e intenta de nuevo.', 'error');
+                        console.error('Upload error:', err);
+                    });
             };
 
             reader.onerror = function () {
@@ -524,44 +554,74 @@
 
         currentUnit = unit;
 
-        // Fetch submission counts
+        // Render first synchronously with cache or empty counts
+        window.countsLoaded = false;
         if (window.currentUser && window.currentUser.email) {
-            try {
-                const url = `${APPS_SCRIPT_URL}?email=${encodeURIComponent(window.currentUser.email)}`;
-                const countsResponse = await fetch(url);
-                if (countsResponse.ok) {
-                    submissionCounts = await countsResponse.json();
-                }
-            } catch (err) {
-                console.error('Error al obtener contadores de entrega:', err);
-                submissionCounts = {};
+            const cacheKey = `submissionCounts_${window.currentUser.email}`;
+            const cached = sessionStorage.getItem(cacheKey);
+            if (cached) {
+                try {
+                    submissionCounts = JSON.parse(cached);
+                    window.countsLoaded = true;
+                } catch (e) { }
             }
         }
 
-        // Populate hero
-        document.title = `Unidad ${unit.unidad} — ${unit.titulo} | Python para Economistas`;
-        document.getElementById('hero-unit-number').textContent = `Unidad ${unit.unidad}`;
-        document.getElementById('hero-title').textContent = unit.titulo;
-        document.getElementById('hero-desc').textContent = unit.descripcion;
-        document.getElementById('hero-obj').textContent = `🎯 Objetivo: ${unit.objetivo}`;
+        const renderPageContent = () => {
+            // Populate hero
+            document.title = `Unidad ${unit.unidad} — ${unit.titulo} | Python para Economistas`;
+            document.getElementById('hero-unit-number').textContent = `Unidad ${unit.unidad}`;
+            document.getElementById('hero-title').textContent = unit.titulo;
+            document.getElementById('hero-desc').textContent = unit.descripcion;
+            document.getElementById('hero-obj').textContent = `🎯 Objetivo: ${unit.objetivo}`;
 
-        // Render sessions
-        const sessionsGrid = document.getElementById('sessions-grid');
-        if (sessionsGrid && unit.sesiones && unit.sesiones.length > 0) {
-            sessionsGrid.innerHTML = unit.sesiones.map((s, i) => renderItemCard(s, 'session', i)).join('');
-        } else if (sessionsGrid) {
-            sessionsGrid.innerHTML = '<p style="color:var(--text-muted);">No hay sesiones para esta unidad.</p>';
+            // Render sessions
+            const sessionsGrid = document.getElementById('sessions-grid');
+            if (sessionsGrid && unit.sesiones && unit.sesiones.length > 0) {
+                sessionsGrid.innerHTML = unit.sesiones.map((s, i) => renderItemCard(s, 'session', i)).join('');
+            } else if (sessionsGrid) {
+                sessionsGrid.innerHTML = '<p style="color:var(--text-muted);">No hay sesiones para esta unidad.</p>';
+            }
+
+            // Render projects
+            const projectsGrid = document.getElementById('projects-grid');
+            if (projectsGrid && unit.proyectos && unit.proyectos.length > 0) {
+                projectsGrid.innerHTML = unit.proyectos.map((p, i) => renderItemCard(p, 'project', i)).join('');
+            } else if (projectsGrid) {
+                projectsGrid.innerHTML = '<p style="color:var(--text-muted);">No hay proyectos para esta unidad.</p>';
+            }
+
+            observeCards();
+        };
+
+        // Render immediately
+        renderPageContent();
+
+        // Fetch submission counts asynchronously
+        if (window.currentUser && window.currentUser.email) {
+            try {
+                const url = `${APPS_SCRIPT_URL}?email=${encodeURIComponent(window.currentUser.email)}`;
+                fetch(url).then(res => res.json()).then(data => {
+                    submissionCounts = data;
+                    window.countsLoaded = true;
+                    // Cache the results
+                    sessionStorage.setItem(`submissionCounts_${window.currentUser.email}`, JSON.stringify(data));
+                    // Re-render
+                    renderPageContent();
+                }).catch(err => {
+                    console.error('Error al obtener contadores de entrega:', err);
+                    window.countsLoaded = true;
+                    renderPageContent(); // Re-render to clear loaders
+                });
+            } catch (err) {
+                console.error('Error general al obtener contadores:', err);
+                window.countsLoaded = true;
+                renderPageContent();
+            }
+        } else {
+            window.countsLoaded = true;
+            renderPageContent();
         }
-
-        // Render projects
-        const projectsGrid = document.getElementById('projects-grid');
-        if (projectsGrid && unit.proyectos && unit.proyectos.length > 0) {
-            projectsGrid.innerHTML = unit.proyectos.map((p, i) => renderItemCard(p, 'project', i)).join('');
-        } else if (projectsGrid) {
-            projectsGrid.innerHTML = '<p style="color:var(--text-muted);">No hay proyectos para esta unidad.</p>';
-        }
-
-        observeCards();
 
         // Populate topic select for upload form
         populateTopicSelect(unit);
@@ -587,6 +647,14 @@
         document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape') closeModal();
         });
+
+        // Add spinner animation style if not defined
+        if (!document.getElementById('spin-style')) {
+            const style = document.createElement('style');
+            style.id = 'spin-style';
+            style.textContent = `@keyframes spin { 100% { transform: rotate(360deg); } }`;
+            document.head.appendChild(style);
+        }
     }
 
     // ---------- Bootstrap ----------
